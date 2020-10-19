@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body 
+{
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    background-color: bisque;
+    color: black; 
+}
+
+p {
+    font-size: 22px;
+    padding: 5%;
+}
+/* Header */
+
+.contenido-header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Imagenes/Fotografía.PNG);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenido-header .fondo {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+.contenido-header .texto {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0,.5);
+    font-size: 90px;
+    font-weight: 400;
+    font-family: "Noto Serif", serif;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    mix-blend-mode: multiply;
+}
+
+/* Navbar */
+
+.menu {
+    background-color: navajowhite;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    z-index: 999;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: "Noto Serif", serif;
+    font-style: italic;
+    margin-bottom: 60px;
+}
+
+.menu a {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 26px;
+    background-color: navajowhite;
+    margin: 0 10px;
+    transition: .5s ease all;
+    color: black;
+    text-decoration:none;
+}
+
+.menu a:hover {
+    transform: translateY(18px);
+    background-color: rgba(245, 196, 122, 0.637);
+    text-decoration: none;
+    color: black;
+}
+
+/*¿Quiénes somos?*/
+
+.Nosotros {
+    margin-bottom: 60px;
+}
+
+.subtitulo {
+    font-size: 20px;
+    color: peru;
+    font-family: "Noto Serif", serif;
+    font-weight: 700;
+    z-index: 2;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding: 60px;
+}
+
+.subtitulo span {
+    background-color: rgb(226, 222, 222);
+    padding: 0 15px;
+    z-index: 99;
+    position: relative;
+}
+
+.subtitulo::after {
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 100%;
+    background: peru;
+    position: relative;
+    top: -29px;
+    z-index: 1;
+}
+
+.Nosotros .titulo {
+    width: 70%;
+    font-size: 44px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.Nosotros .enlace {
+    display: inline-block;
+    margin-top: 40px;
+    color: peru;
+    font-weight: 700;
+    border-bottom: 1px solid transparent;
+    transition: .3s ease all;
+
+}
+
+.Nosotros .enlace:hover {
+    text-decoration: none;
+    letter-spacing: 3px;
+    border-bottom: 1px solid peru;
+}
+
+/*Servicios*/
+
+.Servicios {
+    background: rgb(226, 222, 222);
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+.Servicios .titulo {
+    width: 70%;
+    font-size: 44px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.Servicios .Service {
+    position: relative;
+    width: 100%;
+}
+
+.Servicios .Service .overlay {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: navajowhite;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.Servicios .Service:hover .overlay {
+    width: 100%;
+    opacity: .8;
+}
+
+.Servicios .Service .overlay-texto {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    white-space: nowrap;
+    color: black;
+    font-size: 18px;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-top: 1 px solid black;
+    border-bottom: 1px solid black;
+}
+
+.Servicios .btn-precios {
+    background: peru;
+    color: black;
+    padding: 7px 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    border: 2px solid transparent;
+    transition: .3s case;
+}
+
+.Servicios .btn-precios:hover {
+    background-color: transparent;
+    border: 2px solid peru;
+    color: peru;
+}
+
+/*Separador*/
+
+.Separador {
+    width: 100%;
+    height: 350px;
+    background-image: url(../Imagenes/88\ bodas\ 12.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 60px;
+}
+
+.Separador p {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0,.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-family: "Noto serif", serif;
+    padding: 10px;
+}
+
+/*Acerca de*/
+.acerca-de {
+    margin-bottom: 60px;
+}
+
+.container .icono {
+    width: 70px;
+}
+
+/*Galería*/
+
+.Galería img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*Contacto*/
+
+.Contacto {
+    margin-bottom: 60px;
+}
+
+.Contacto .container .icono {
+    width: 25px;
+}
+
+.redes-sociales {
+    padding: 10px;
+    background-color: papayawhip;
+}
+
+.redes-sociales .icons {
+    padding: 5px;
+    border-radius: 100%;
+    width: 50px;
+    transition: .3s ease all;
+}
+
+.redes-sociales .icons:hover {
+    transform: scale(1.2);
+}
